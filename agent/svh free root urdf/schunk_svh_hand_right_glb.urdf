@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='ASCII'?>
+<robot name="svh">
+  <link name="dummy_x_translation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="dummy_y_translation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="dummy_z_translation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="dummy_x_rotation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="dummy_y_rotation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="dummy_z_rotation_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <link name="base_link"/>
+  <link name="right_hand_base_link">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/base10.glb"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.032" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.045" length="0.045"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.009" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_e1">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/h10.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <origin xyz="0.0 0.01313 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.05 0.05 0.026"/>
+      </geometry>
+      <origin xyz="0.0 0.01313 0.013" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <box size="0.0584 0.038 0.0641"/>
+      </geometry>
+      <origin xyz="-0.00573 0.0035 0.05747" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <box size="0.042 0.038 0.015"/>
+      </geometry>
+      <origin xyz="-0.01 0.0035 0.096" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_e2">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/h11.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <origin xyz="-0.0007 0.0 -0.01002" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.0246 0.035 0.0564"/>
+      </geometry>
+      <origin xyz="0.016 0.0 0.02" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <box size="0.012 0.018 0.021"/>
+      </geometry>
+      <origin xyz="0.0032 -0.0083 0.048" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_z">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/d10.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.02442" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.024 0.0188 0.008"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.02842" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <box size="0.006 0.024 0.033"/>
+      </geometry>
+      <origin xyz="0.0125 0.0 0.04292" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <box size="0.006 0.024 0.033"/>
+      </geometry>
+      <origin xyz="-0.0125 0.0 0.04292" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_a">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/d11.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/d11.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_b">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/d12.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/d12.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_c">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="2e-05" iyz="0.0" izz="2e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/d13.glb" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/d13.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_virtual_l">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f10_f20.glb"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.01321" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.00121" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_l">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f11.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f11.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_p">
+    <inertial>
+      <origin xyz="0.01 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.024"/>
+      <inertia ixx="9e-07" ixy="0.0" ixz="0.0" iyy="3e-06" iyz="0.0" izz="2e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f12.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f12.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_t">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="2e-05" iyz="0.0" izz="2e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/finger_tip.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/finger_tip.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_virtual_k">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f10_f20.glb"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.01321" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.00321" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_k">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f21.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f21.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_o">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f22_f32.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f22_f32.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_s">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="2e-05" iyz="0.0" izz="2e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/finger_tip.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/finger_tip.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_virtual_j">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f30_f40.glb"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.01321" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.00321" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_j">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f31.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f31.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_n">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f22_f32.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f22_f32.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_r">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="2e-05" iyz="0.0" izz="2e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/finger_tip.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/finger_tip.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_virtual_i">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f30_f40.glb"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.01321" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.00321" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_hand_i">
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f41.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f41.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_m">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="8e-07" ixy="0.0" ixz="0.0" iyy="2e-06" iyz="0.0" izz="2e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/f42.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/f42.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_q">
+    <inertial>
+      <origin xyz="0.007 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.02"/>
+      <inertia ixx="1e-05" ixy="0.0" ixz="0.0" iyy="2e-05" iyz="0.0" izz="2e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/visual/finger_tip.glb"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="/mnt/1478063F7806205A/DexYCB/dex-retargeting/assets/robots/hands/schunk_hand/meshes/collision/finger_tip.obj"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="thtip"/>
+  <link name="fftip"/>
+  <link name="mftip"/>
+  <link name="rftip"/>
+  <link name="lftip"/>
+  <joint name="dummy_x_translation_joint" type="prismatic">
+    <parent link="dummy_x_translation_link"/>
+    <child link="dummy_y_translation_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="3.14" lower="-5" upper="5"/>
+  </joint>
+  <joint name="dummy_y_translation_joint" type="prismatic">
+    <parent link="dummy_y_translation_link"/>
+    <child link="dummy_z_translation_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="10" velocity="3.14" lower="-5" upper="5"/>
+  </joint>
+  <joint name="dummy_z_translation_joint" type="prismatic">
+    <parent link="dummy_z_translation_link"/>
+    <child link="dummy_x_rotation_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="3.14" lower="-5" upper="5"/>
+  </joint>
+  <joint name="dummy_x_rotation_joint" type="revolute">
+    <parent link="dummy_x_rotation_link"/>
+    <child link="dummy_y_rotation_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="3.14" lower="-6.283185307179586" upper="6.283185307179586"/>
+  </joint>
+  <joint name="dummy_y_rotation_joint" type="revolute">
+    <parent link="dummy_y_rotation_link"/>
+    <child link="dummy_z_rotation_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="10" velocity="3.14" lower="-6.283185307179586" upper="6.283185307179586"/>
+  </joint>
+  <joint name="dummy_z_rotation_joint" type="revolute">
+    <parent link="dummy_z_rotation_link"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="3.14" lower="-6.283185307179586" upper="6.283185307179586"/>
+  </joint>
+  <joint name="root_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_hand_base_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 -1.57079"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_hand_Thumb_Flexion" type="revolute">
+    <parent link="right_hand_z"/>
+    <child link="right_hand_a"/>
+    <origin xyz="0.0 0.0 0.04596" rpy="1.57079 -0.6003999999999999 1.57079"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.9704"/>
+  </joint>
+  <joint name="right_hand_Thumb_Opposition" type="revolute">
+    <parent link="right_hand_e1"/>
+    <child link="right_hand_z"/>
+    <origin xyz="-0.0169 0.02626 0.0" rpy="0.0 0.2618 1.571"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.9879"/>
+  </joint>
+  <joint name="right_hand_f4" type="fixed">
+    <parent link="right_hand_base_link"/>
+    <child link="right_hand_e1"/>
+    <origin xyz="0.0 -0.01313 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_hand_j5" type="revolute">
+    <parent link="right_hand_e1"/>
+    <child link="right_hand_e2"/>
+    <origin xyz="0.0184 0.006 0.0375" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.98786"/>
+  </joint>
+  <joint name="right_hand_j3" type="revolute">
+    <parent link="right_hand_a"/>
+    <child link="right_hand_b"/>
+    <origin xyz="0.0485 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.98506"/>
+  </joint>
+  <joint name="right_hand_j4" type="revolute">
+    <parent link="right_hand_b"/>
+    <child link="right_hand_c"/>
+    <origin xyz="0.03 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.406"/>
+  </joint>
+  <joint name="right_hand_Index_Finger_Distal" type="revolute">
+    <parent link="right_hand_l"/>
+    <child link="right_hand_p"/>
+    <origin xyz="0.04804 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.334"/>
+  </joint>
+  <joint name="right_hand_Index_Finger_Proximal" type="revolute">
+    <parent link="right_hand_virtual_l"/>
+    <child link="right_hand_l"/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.79849"/>
+  </joint>
+  <joint name="right_hand_j14" type="revolute">
+    <parent link="right_hand_p"/>
+    <child link="right_hand_t"/>
+    <origin xyz="0.026 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.394"/>
+  </joint>
+  <joint name="right_hand_Middle_Finger_Proximal" type="revolute">
+    <parent link="right_hand_virtual_k"/>
+    <child link="right_hand_k"/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.79849"/>
+  </joint>
+  <joint name="right_hand_Middle_Finger_Distal" type="revolute">
+    <parent link="right_hand_k"/>
+    <child link="right_hand_o"/>
+    <origin xyz="0.05004 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.334"/>
+  </joint>
+  <joint name="right_hand_j15" type="revolute">
+    <parent link="right_hand_o"/>
+    <child link="right_hand_s"/>
+    <origin xyz="0.032 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.334"/>
+  </joint>
+  <joint name="right_hand_Ring_Finger" type="revolute">
+    <parent link="right_hand_virtual_j"/>
+    <child link="right_hand_j"/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.98175"/>
+  </joint>
+  <joint name="right_hand_j12" type="revolute">
+    <parent link="right_hand_j"/>
+    <child link="right_hand_n"/>
+    <origin xyz="0.05004 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.334"/>
+  </joint>
+  <joint name="right_hand_j16" type="revolute">
+    <parent link="right_hand_n"/>
+    <child link="right_hand_r"/>
+    <origin xyz="0.032 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.395"/>
+  </joint>
+  <joint name="right_hand_Pinky" type="revolute">
+    <parent link="right_hand_virtual_i"/>
+    <child link="right_hand_i"/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.98175"/>
+  </joint>
+  <joint name="right_hand_j13" type="revolute">
+    <parent link="right_hand_i"/>
+    <child link="right_hand_m"/>
+    <origin xyz="0.04454 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.334"/>
+  </joint>
+  <joint name="right_hand_j17" type="revolute">
+    <parent link="right_hand_m"/>
+    <child link="right_hand_q"/>
+    <origin xyz="0.022 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="1.3971"/>
+  </joint>
+  <joint name="right_hand_index_spread" type="revolute">
+    <parent link="right_hand_e1"/>
+    <child link="right_hand_virtual_l"/>
+    <origin xyz="-0.025 0.0 0.11" rpy="0.0 -1.5707 1.5707"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.28833"/>
+  </joint>
+  <joint name="right_hand_middle_spread_dummy" type="fixed">
+    <parent link="right_hand_e1"/>
+    <child link="right_hand_virtual_k"/>
+    <origin xyz="0.0 0.0 0.11" rpy="0.0 -1.5707 1.5707"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_hand_ring_spread" type="revolute">
+    <parent link="right_hand_e2"/>
+    <child link="right_hand_virtual_j"/>
+    <origin xyz="0.003855 -0.006 0.0655" rpy="-1.5707 -1.5707 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.28833"/>
+  </joint>
+  <joint name="right_hand_Finger_Spread" type="revolute">
+    <parent link="right_hand_e2"/>
+    <child link="right_hand_virtual_i"/>
+    <origin xyz="0.025355 -0.006 0.056" rpy="-1.5707 -1.5707 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit effort="1000.0" velocity="1.0" lower="0.0" upper="0.5829"/>
+  </joint>
+  <joint name="thtip_joint" type="fixed">
+    <parent link="right_hand_c"/>
+    <child link="thtip"/>
+    <origin xyz="0.0275 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="fftip_joint" type="fixed">
+    <parent link="right_hand_t"/>
+    <child link="fftip"/>
+    <origin xyz="0.014 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="mftip_joint" type="fixed">
+    <parent link="right_hand_s"/>
+    <child link="mftip"/>
+    <origin xyz="0.014 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="rftip_joint" type="fixed">
+    <parent link="right_hand_r"/>
+    <child link="rftip"/>
+    <origin xyz="0.014 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+  <joint name="lftip_joint" type="fixed">
+    <parent link="right_hand_q"/>
+    <child link="lftip"/>
+    <origin xyz="0.014 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+  </joint>
+</robot>
